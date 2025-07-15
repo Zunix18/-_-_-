@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyEasy - Бронювання авіаквитків</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="FlyEasy Logo" class="logo">
+        <h1>FlyEasy</h1>
+        <p>Забронюйте авіаквитки по всьому світу</p>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Шукайте дешеві квитки легко</h2>
+            <form id="booking-form">
+                <input type="text" name="from" placeholder="Звідки (наприклад, Київ)" required>
+                <input type="text" name="to" placeholder="Куди (наприклад, Париж)" required>
+                <input type="date" name="date" required>
+                <input type="number" name="passengers" min="1" value="1" required>
+                <button type="submit">Знайти квитки</button>
+            </form>
+        </section>
+
+        <section class="destinations">
+            <h2>Популярні напрямки</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/paris.jpg" alt="Париж">
+                    <p>Київ → Париж</p>
+                </div>
+                <div class="card">
+                    <img src="images/london.jpg" alt="Лондон">
+                    <p>Львів → Лондон</p>
+                </div>
+                <div class="card">
+                    <img src="images/nyc.jpg" alt="Нью-Йорк">
+                    <p>Київ → Нью-Йорк</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2025 FlyEasy. Всі права захищені.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
